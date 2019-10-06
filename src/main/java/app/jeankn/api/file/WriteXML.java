@@ -54,8 +54,10 @@ class WriteXML extends Write {
                 for(XMLNode child : data.children) {
                     traverseObject(serializer, child);
                 }
-            } else {
+            } else if(data.value != null) {
                 serializer.text(data.value.toString());
+            } else {
+                serializer.text("");
             }
             serializer.endTag(null, data.key);
         } catch (IOException e) {
