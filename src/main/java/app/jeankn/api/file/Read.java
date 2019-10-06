@@ -9,14 +9,22 @@ abstract class Read extends IO {
     private OnProgressListener progressListener = null;
     private OnFinishListener finishListener = null;
 
-    public Read(String path, Context context, OnFinishListener finishListener) {
+    Read(String path, Context context, OnFinishListener finishListener) {
         super(path, context);
         this.finishListener = finishListener;
 
         execute();
     }
 
-    public Read(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    Read(String path, Context context, OnFinishListener finishListener, String separator) {
+        super(path, context);
+        this.finishListener = finishListener;
+        this.separator = separator;
+
+        execute();
+    }
+
+    Read(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path, context);
         this.finishListener = finishListener;
         this.progressListener = progressListener;

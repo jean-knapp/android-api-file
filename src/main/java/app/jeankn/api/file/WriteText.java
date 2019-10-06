@@ -8,13 +8,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class WriteText extends Write {
+class WriteText extends Write {
 
-    public WriteText(String path, String data, Context context, WriteText.OnFinishListener finishListener) {
+    WriteText(String path, String data, Context context, WriteText.OnFinishListener finishListener) {
         super(path, data, context, finishListener);
     }
 
-    public WriteText(String path, String data, Context context, WriteText.OnFinishListener finishListener, WriteText.OnProgressListener progressListener) {
+    WriteText(String path, String data, Context context, WriteText.OnFinishListener finishListener, WriteText.OnProgressListener progressListener) {
         super(path, data, context, finishListener, progressListener);
     }
 

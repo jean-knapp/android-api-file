@@ -15,11 +15,11 @@ import java.io.StringReader;
 import java.util.ArrayList;
 
 public class ReadXMLExternal extends ReadExternal {
-    public ReadXMLExternal(String path, Context context, OnFinishListener finishListener) {
+    ReadXMLExternal(String path, Context context, OnFinishListener finishListener) {
         super(path, context, finishListener);
     }
 
-    public ReadXMLExternal(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    ReadXMLExternal(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path,context, finishListener, progressListener);
     }
 

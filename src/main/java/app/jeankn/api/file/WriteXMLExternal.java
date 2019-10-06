@@ -10,12 +10,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.StringWriter;
 
-public class WriteXMLExternal extends WriteExternal {
-    public WriteXMLExternal(String path, Object data, Context context, OnFinishListener finishListener) {
+class WriteXMLExternal extends WriteExternal {
+    WriteXMLExternal(String path, Object data, Context context, OnFinishListener finishListener) {
         super(path, data, context, finishListener);
     }
 
-    public WriteXMLExternal(String path, Object data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    WriteXMLExternal(String path, Object data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path, data, context, finishListener, progressListener);
     }
 

@@ -9,7 +9,7 @@ abstract class Write extends IO {
     private OnProgressListener progressListener = null;
     private OnFinishListener finishListener = null;
 
-    public Write(String path, Object data, Context context, OnFinishListener finishListener) {
+    Write(String path, Object data, Context context, OnFinishListener finishListener) {
         super(path, context);
         this.finishListener = finishListener;
         this.data = data;
@@ -17,7 +17,7 @@ abstract class Write extends IO {
         execute();
     }
 
-    public Write(String path, Object data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    Write(String path, Object data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path, context);
         this.finishListener = finishListener;
         this.progressListener = progressListener;

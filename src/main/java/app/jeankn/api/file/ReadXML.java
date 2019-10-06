@@ -14,12 +14,12 @@ import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.util.ArrayList;
 
-public class ReadXML extends Read {
-    public ReadXML(String path, Context context, OnFinishListener finishListener) {
+class ReadXML extends Read {
+    ReadXML(String path, Context context, OnFinishListener finishListener) {
         super(path, context, finishListener);
     }
 
-    public ReadXML(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    ReadXML(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path,context, finishListener, progressListener);
     }
 

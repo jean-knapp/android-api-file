@@ -3,20 +3,17 @@ package app.jeankn.api.file;
 import android.content.Context;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-class ReadCSV extends ReadText {
-    ReadCSV(String path, Context context, String separator, ReadText.OnFinishListener finishListener) {
-        super(path, context, finishListener, separator);
+class ReadCSVExternal extends ReadTextExternal {
+    private String separator;
 
+    ReadCSVExternal(String path, Context context, String separator, OnFinishListener finishListener) {
+        super(path, context, finishListener, separator);
     }
 
-    ReadCSV(String path, Context context, ReadText.OnFinishListener finishListener, ReadText.OnProgressListener progressListener) {
+    ReadCSVExternal(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path,context, finishListener, progressListener);
     }
 

@@ -10,12 +10,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.StringWriter;
 
-public class WriteXML extends Write {
-    public WriteXML(String path, Object data, Context context, OnFinishListener finishListener) {
+class WriteXML extends Write {
+    WriteXML(String path, Object data, Context context, OnFinishListener finishListener) {
         super(path, data, context, finishListener);
     }
 
-    public WriteXML(String path, Object data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    WriteXML(String path, Object data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path, data, context, finishListener, progressListener);
     }
 

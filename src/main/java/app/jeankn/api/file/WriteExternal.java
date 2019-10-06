@@ -9,11 +9,11 @@ import java.io.File;
 
 abstract class WriteExternal extends Write {
 
-    public WriteExternal(String path, Object data, Context context, OnFinishListener finishListener) {
+    WriteExternal(String path, Object data, Context context, OnFinishListener finishListener) {
         super(path, data, context, finishListener);
     }
 
-    public WriteExternal(String path, Object data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    WriteExternal(String path, Object data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path, data, context, finishListener, progressListener);
     }
 

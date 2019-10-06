@@ -8,13 +8,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class WriteTextExternal extends WriteExternal {
+class WriteTextExternal extends WriteExternal {
 
-    public WriteTextExternal(String path, String data, Context context, OnFinishListener finishListener) {
+    WriteTextExternal(String path, String data, Context context, OnFinishListener finishListener) {
         super(path, data, context, finishListener);
     }
 
-    public WriteTextExternal(String path, String data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    WriteTextExternal(String path, String data, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path, data, context, finishListener, progressListener);
     }
 

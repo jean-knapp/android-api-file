@@ -8,11 +8,14 @@ import java.io.File;
 
 abstract class IO extends AsyncTask<Void, Integer, Integer> {
     public static final int ERROR = 0;
-    public static final  int SUCCESS = 1;
+    public static final int SUCCESS = 1;
     public static final int FILE_NOT_FOUND = 2;
     public static final int PERMISSION_DENIED = 4;
 
     private String path;
+
+    // CSV specific
+    String separator;
 
     protected Context context;
     protected Object data;

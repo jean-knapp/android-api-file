@@ -8,12 +8,16 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ReadTextExternal extends ReadExternal {
-    public ReadTextExternal(String path, Context context, OnFinishListener finishListener) {
+class ReadTextExternal extends ReadExternal {
+    ReadTextExternal(String path, Context context, OnFinishListener finishListener) {
         super(path, context, finishListener);
     }
 
-    public ReadTextExternal(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
+    ReadTextExternal(String path, Context context, OnFinishListener finishListener, String separator) {
+        super(path, context, finishListener, separator);
+    }
+
+    ReadTextExternal(String path, Context context, OnFinishListener finishListener, OnProgressListener progressListener) {
         super(path,context, finishListener, progressListener);
     }
 

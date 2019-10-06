@@ -8,12 +8,16 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ReadText extends Read {
-    public ReadText(String path, Context context, ReadText.OnFinishListener finishListener) {
+class ReadText extends Read {
+    ReadText(String path, Context context, ReadText.OnFinishListener finishListener) {
         super(path, context, finishListener);
     }
 
-    public ReadText(String path, Context context, ReadText.OnFinishListener finishListener, ReadText.OnProgressListener progressListener) {
+    ReadText(String path, Context context, ReadText.OnFinishListener finishListener, String separator) {
+        super(path, context, finishListener, separator);
+    }
+
+    ReadText(String path, Context context, ReadText.OnFinishListener finishListener, ReadText.OnProgressListener progressListener) {
         super(path,context, finishListener, progressListener);
     }
 

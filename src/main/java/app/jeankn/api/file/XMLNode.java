@@ -4,6 +4,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
+
 public class XMLNode {
     public String key;
     public Object value = null;
