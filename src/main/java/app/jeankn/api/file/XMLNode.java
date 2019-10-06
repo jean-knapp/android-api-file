@@ -26,7 +26,12 @@ public class XMLNode {
         this.children = children;
     }
 
+    public XMLNode(String key) {
+        this.key = key;
+        this.children = new XMLNode[0];
+    }
+
     public boolean hasChildren() {
-        return children != null;
+        return children != null && children.length > 0;
     }
 }
