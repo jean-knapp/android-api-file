@@ -105,7 +105,7 @@ public class ReadXMLExternal extends ReadExternal {
                 }
 
                 if (children.size() > 0) {
-                    keyVal.children = children.toArray(new XMLNode[0]);
+                    keyVal.children = children;
                 }
 
                 if (parser.getEventType() == XmlPullParser.END_TAG) {
