@@ -26,6 +26,7 @@ You can also download the Android AAR and and its required dependencies directly
 ## Settings
 
 In order to access the external storage, add this to the AndroidManifest.xml:
-```    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```   
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
